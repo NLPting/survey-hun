@@ -1,83 +1,139 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Bootstrap 3.3.4 Example - jQuery.countdown</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width">
-    <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="//cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+<html lang="en">
 
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <!----<li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>-->
-          </ul>
-        </div>
-      </div>
-    </nav>
+<head>
 
-    <div class="alert_row">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3 class='blink'>剩下60秒
-                  快快快快</h3>
-            </div>
-          </div>
-    </div>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    
-    
+  <title>Bare - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="//cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <div class="starter-template">
-        <div class="content">
-          <h1 style="text-align:center">廷歡的問卷調查</h1>
-          <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        </div>
-        <div class="panel panel-default" data-toggle="tooltip" data-placement="top" title="" data-original-title="Beautifull, insn't it?">
-          <div class="panel-body">
-            <div class="lead" id="clock">1:10</div>
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!----
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+    -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center" id = 'head1'>
+        <h1 class="mt-5">廷歡的問卷調查</h1>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <div class="card" id='card-1' style="width: 70%;">
+          <div class="card-header text-center" id='clock' >
+              1:10
+          </div>
+          <div class="card-body">
+            <div id='content'>
+                <p class="card-text">
+                    親愛的先生/女士，您好： 
+                    <p class="card-text">
+                        感謝您撥冗填寫本問卷。這是一份學術用途的研究問卷，主要是在探討＿＿＿
+                        請您根據實際於訂房網站上經驗，並且選擇最符合的選項。注意此份問卷有時間限制。問卷填答無所謂對與錯，請依照您的經驗填答即可。本問卷採用匿名方式，所有資料僅供本學術研究分析使用，不會轉至其他用途，請安心填答。非常感謝您的協助，使得本研究能順利進行！
+                        敬祝  健康  順遂
+                    </p>
+                </p>
+                <p class="card-text text-right">
+                    <br>國立中央大學企業管理研究所
+                    <br>指導教授： 林建煌 博士
+                    <br>研  究  生： 顏廷歡 敬上
+                    <br>E-mail：cindy843210@gmail.com
+                </p>
+          </div>
+            
+
+
+            <div class="d-flex justify-content-center">
+              <div class="alert-card text-white bg-danger mb-3" style="width: 15rem;" id = "alert-show">
+                  <div class="card-bo text-center" id='blink'>
+                      剩下60秒
+                      快快快快
+                  </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="alert-card border-danger mb-3" style="width: 15rem;" id = "alert-show1">
+                    <div class="card-bo text-center" id='blink'>
+                        剩下60秒
+                        快快快快
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center" id = "btn-r">
+                <button type="button" class="btn btn-primary" id="btn-reset">
+                        Start countdown
+                </button>
+            </div>
+
+            <div class="embed-responsive embed-responsive-1by1" id='survery' style="top: 15px;">
+                <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLScvzJFnyMK6OVMNvxnzQIypKhoekIDuRKYuXaeFcfs3tCcpEA/viewform?embedded=true" allowfullscreen>載入中…</iframe>
+            </div>
+
+            
+
           </div>
         </div>
+
+
         
-    
-        <button type="button" class="btn btn-primary" id="btn-reset">
-          <i class="glyphicon glyphicon-play"></i>
-          Start countdown
-        </button>
 
-        <div id='survery'>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemd0lZZKdbz-IIT5xc46RZlxG4hyF9wjEVSp_9fROtlbdBJQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
-        </div>
-
-        </div>
-      </div>
-
-      
-
-      
     </div>
+
+
+
     
 
-    <script src="./js/main.js"></script>
-
-    </body>
     
+
+    
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="./js/main1.js"></script>
+
+</body>
+
 </html>
