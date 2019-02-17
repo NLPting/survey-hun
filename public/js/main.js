@@ -6,7 +6,7 @@ $('#alert-show1').hide()
     
 // 15 days from now!
 function get15dayFromNow() {
-  return new Date(new Date().valueOf() + 60 * 1160);
+  return new Date(new Date().valueOf() + 60 * 3160);
 }
 
 var $clock = $('#clock');
