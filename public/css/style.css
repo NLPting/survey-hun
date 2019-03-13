@@ -1,8 +1,14 @@
 
 
+#alert-show1{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 
 
-.alert-card {
+
+.alert-card{
     position: relative;
     display: -ms-flexbox;
     display: flex;

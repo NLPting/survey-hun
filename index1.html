@@ -11,6 +11,10 @@
       div.sticky {
         position: -webkit-sticky;
         position: sticky;
+        top: 0;
+        padding: 20px;
+        background-color: #f8f9fa;
+        font-size: 20px;
       }
       </style>
 
@@ -38,9 +42,25 @@
       </div>
     </nav>
 
-    <div class="header text-center sticky">
-          <h2 class='clock'>1:10</h2>
+    <div class="sticky text-center">
+      1:10
     </div>
+
+    <div class="alert-card border-danger mb-3" style="width: 25rem;" id = "alert-show1">
+        <div class="card-body text-center" id='blink'>
+            剩下60秒
+            快快快快
+        </div>
+    </div>
+
+    <div class="alert-card1 border-danger mb-3" style="width: 25rem;" id = "alert-show2">
+        <div class="card-body text-center" id='blink'>
+            剩下50秒
+            快快快快
+        </div>
+    </div>
+
+    
 
     <div id='surveycake'>
       
