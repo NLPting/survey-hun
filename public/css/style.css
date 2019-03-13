@@ -11,6 +11,20 @@
     top: 0;
 }
 
+.alert-card1{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
 
 .alert-card{
     position: relative;
@@ -67,6 +81,23 @@
     50% { border-color: white; } 
  }
  .alert-card { /*or other element you want*/
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+   
+    -moz-animation-name: blink;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+   
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+ }
+
+ .alert-card1 { /*or other element you want*/
     -webkit-animation-name: blink;
     -webkit-animation-duration: 1s;
     -webkit-animation-timing-function: linear;
