@@ -14,13 +14,17 @@ $('#alert-show1').hide()
 
 
 
+$('.banner').hide()
+$('.intro').hide()
+
+
+
 $('#go').click(function() {
   //$clock.countdown(get15dayFromNow());
   $('.sticky').show()
   $('.page1').hide()
   document.getElementById('surveycake').innerHTML = "<iframe width='100%' height='800' src='https://www.surveycake.com/s/11WXl' style='overflow:hidden;border:#ddd 1px solid;' allowTransparency='true' frameborder='0'> </iframe>"
-  $('.banner').hide()
-  $('.intro').hide()
+  
   setTimeout(function(){
 
     $clock.countdown(get15dayFromNow(), function(event) {
@@ -30,6 +34,8 @@ $('#go').click(function() {
       console.log(event.offset.minutes , event.offset.seconds)
   
       alert_reminder(event.offset.minutes , event.offset.seconds)
+      $('.banner').hide()
+      $('.intro').hide()
 
   
     });
