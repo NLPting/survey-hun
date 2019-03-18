@@ -1,0 +1,12 @@
+{
+    "routes": [
+      {
+        "route": "/index1.html",
+        "address": "http://localhost:1001"
+      },
+      {
+        "route": "/index1.html",
+        "address": "http://localhost:1002"
+      }
+    ]
+  }

@@ -14,6 +14,14 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index1.html');
 });
 
+app.get('/app/', function(req, res){
+  res.sendFile(__dirname + '/index2.html');
+});
+
+
+app.get('/base/', function(req, res){
+  res.sendFile(__dirname + '/index.html');
+});
 
 
 http.listen(3001, function(){
