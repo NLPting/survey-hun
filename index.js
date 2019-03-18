@@ -20,7 +20,11 @@ app.get('/app/', function(req, res){
 
 
 app.get('/base/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/index3.html');
+});
+
+app.get('/base1/', function(req, res){
+  res.sendFile(__dirname + '/index4.html');
 });
 
 
