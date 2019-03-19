@@ -2,13 +2,13 @@
 
 $('#go').click(function() {
   //$clock.countdown(get15dayFromNow());
-  var items = Array('http://localhost:3001/tmp' ,'http://localhost:3001/tmp1', '0');
+  var items = Array('http://140.114.89.223:3001/tmp' ,'http://140.114.89.223:3001/tmp1', '0');
   var item = items[Math.floor(Math.random()*items.length)];
-  if (item=='http://localhost:3001/tmp'){
-    window.location.href = "http://localhost:3001/tmp"
+  if (item=='http://140.114.89.223:3001/tmp'){
+    window.location.href = "http://140.114.89.223:3001/tmp"
   }
-  if (item=='http://localhost:3001/tmp1'){
-    window.location.href = "http://localhost:3001/tmp1"
+  if (item=='http://140.114.89.223:3001/tmp1'){
+    window.location.href = "http://140.114.89.223:3001/tmp1"
   }
 
   var pages = Array('https://www.surveycake.com/s/8aNgP' ,'https://www.surveycake.com/s/yo9V0', 'https://www.surveycake.com/s/l03OO','https://www.surveycake.com/s/GRLON');
